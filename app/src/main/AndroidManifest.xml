@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 
-    package="com.sergiocasero.baseproject">
+    package="com.sergiocasero.baseprojectsample">
 
     <application
         android:allowBackup="true"
