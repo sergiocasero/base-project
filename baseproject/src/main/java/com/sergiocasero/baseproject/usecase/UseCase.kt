@@ -21,9 +21,7 @@ abstract class UseCase {
                 .subscribe(onNext as Consumer<in Any>, onError, onComplete)
     }
 
-    fun unsubscribe() {
-        disposable!!.dispose()
-    }
+    fun unsubscribe() = disposable!!.dispose()
 
     abstract fun getObservable(): Observable<*>
 }

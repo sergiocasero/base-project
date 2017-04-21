@@ -6,7 +6,7 @@ package com.sergiocasero.baseproject.presenter
 
 abstract class Presenter<V : Presenter.View> {
 
-    private var view: V? = null
+    var view: V? = null
 
     abstract fun initialize()
 
@@ -15,14 +15,6 @@ abstract class Presenter<V : Presenter.View> {
     abstract fun pause()
 
     abstract fun destroy()
-
-    fun getView(): V? {
-        return view
-    }
-
-    fun setView(view: V) {
-        this.view = view
-    }
 
     interface View
 }

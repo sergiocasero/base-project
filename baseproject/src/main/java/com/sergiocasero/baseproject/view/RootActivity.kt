@@ -44,7 +44,7 @@ abstract class RootActivity : AppCompatActivity(), Presenter.View {
     abstract fun initializeInjection()
 
     private fun initializePresenter() {
-        presenter.setView(this)
+        presenter.view = this
         presenter.initialize()
     }
 
